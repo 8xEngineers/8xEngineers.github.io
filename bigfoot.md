@@ -17,21 +17,17 @@ Furthermore, we note the following points -
 - **Dependency on jQuery**: Bigfoot.js leverages jQuery for efficient DOM manipulation, event handling, and traversal.
 - **Customizability**: The library allows for extensive customization through CSS/SCSS overrides, enabling users to tailor the appearance of footnotes to fit their specific design needs.
 
-The main scripts for the plugin have been written in a _single file_ (not a great decision for modularity) and have been [heavily documented](). 
+The main scripts for the plugin have been written in a _single file_ (not a great decision for modularity) and have been heavily documented providing the users with various customization options. The users can directly add the relevant CSS and add customization options in the Javascript call to Bigfoot to create the desired output. However, if a user requires a more complex setup that requires changing the source code, they have to go through the build process through Coffeescript which is outdated of sorts. 
+
+The architecture of the code has been discussed more specfically in [the next section](#code-organization-and-quality).
+
 ## Code Organization and Quality
-- **Modular Layout**: Bigfoot.js is organized in a modular structure, facilitating ease of interpretation and maintenance.
+We have noted the following qualities in the code -
 - **Consistent Naming Conventions**: The well-maintained naming conventions within the codebase help users understand the contents and purpose of each file.
-- **Cross-Browser Compatibility**: The library is designed to function seamlessly across various web browsers, ensuring a wide user base can utilize its features.
-- **Aesthetic Design**: The combination of CSS and JavaScript provides a consistent and visually pleasing style for footnote display.
+- **Cross-Browser Compatibility**: The library is designed to function seamlessly across various web browsers and devices, supporting a variety of platforms with different window sizes.
+- **Aesthetic Design**: The CSS focusses on having an aesthetic design, that probably gained the popularity for the library.
 
-## Language Usage
-- **JavaScript**: Utilized for enabling footnotes to appear upon user interaction (button clicks).
-- **HTML**: Used for positioning footnotes alongside their references on the webpage, enhancing interactive functionality.
-- **CSS**: Controls visual attributes such as fonts, spacing, colors, and styles for the footnotes.
-- **SCSS**: Organizes and creates reusable styles for footnotes, which are compiled into CSS to meet browser requirements.
-- **jQuery**: This JavaScript library facilitates HTML element manipulation, event management, and animations, playing a crucial role in footnote display and content updates.
 
-## Repository Organization and Quality
 The root folder of Bigfoot.js contains the following files:
 - **`README.md`**: Provides essential information about the Bigfoot.js library, including installation instructions and relevant details for users.
 - **`bower.json`**: Manages library dependencies using Bower, specifying the required jQuery version and containing project metadata.
@@ -42,6 +38,14 @@ The root folder of Bigfoot.js contains the following files:
   - **`bigfoot-default.css`**: Contains the default styles for footnote display on webpages.
   - **`bigfoot-default.scss`**: The SCSS version of the default CSS file, allowing users to utilize SASS features like variables and nesting for better style customization.
 - **`src` folder**: Houses the source files for CoffeeScript and SCSS, which are compiled into JavaScript and CSS files using Grunt.
+
+
+## Language Usage
+- **JavaScript**: Utilized for enabling footnotes to appear upon user interaction (button clicks).
+- **HTML**: Used for positioning footnotes alongside their references on the webpage, enhancing interactive functionality.
+- **CSS**: Controls visual attributes such as fonts, spacing, colors, and styles for the footnotes.
+- **SCSS**: Organizes and creates reusable styles for footnotes, which are compiled into CSS to meet browser requirements.
+- **jQuery**: This JavaScript library facilitates HTML element manipulation, event management, and animations, playing a crucial role in footnote display and content updates.
 
 ## Tool Quality
 Bigfoot.js employs Grunt for automating repetitive tasks, including:
