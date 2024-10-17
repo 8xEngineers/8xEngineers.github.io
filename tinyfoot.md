@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /tinyfoot
+description: Footnotes are getting simpler.
 ---
 
 # Tinyfoot
@@ -15,3 +16,8 @@ Building from the success of Littlefoot, we have added these key features to enh
 - **Copy-button** - A simple yet useful feature to  copy the footnote text.
 
 With many more features in the pipeline, we are excited to see how users will utilize Tinyfoot to create engaging content.
+
+
+Read more about our take on the predecessor libraries here
+- [Bigfoot](./bigfoot)
+- [Littlefoot](./littlefoot)
