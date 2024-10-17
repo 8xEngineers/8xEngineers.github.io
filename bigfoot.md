@@ -8,12 +8,16 @@ permalink: /bigfoot
 # Bigfoot.js Overview
 
 ## Introduction
-**Bigfoot.js** is a lightweight JavaScript library designed to enhance the handling of footnotes in web applications. By enabling users to view footnotes through interactive, clickable buttons, Bigfoot.js significantly improves both readability and aesthetic appeal.
+[**Bigfoot.js**](https://bigfootjs.com) is a lightweight JavaScript library designed to enhance the handling of footnotes in web applications. By enabling users to view footnotes through interactive, clickable buttons, Bigfoot.js significantly improves both readability and aesthetic appeal.
 
 ## Design Decisions
+Developed over 9 years ago, Bigfoot relies on **[Coffeescript]coffeesc…)** and **[SCSS](https://sass-lang.com)** for its core functionality. These files generate the necessary CSS and JavaScript code for the library. It must be noted that these pipelines have now been replaced with more convenient and modern tools. For example, [Littlefoot](http://littlefoot.js.org/) uses Typescript to build the required files and can be built using [`npm`](https://www.npmjs.com).
+
+Furthermore, we note the following points -
 - **Dependency on jQuery**: Bigfoot.js leverages jQuery for efficient DOM manipulation, event handling, and traversal.
 - **Customizability**: The library allows for extensive customization through CSS/SCSS overrides, enabling users to tailor the appearance of footnotes to fit their specific design needs.
 
+The main scripts for the plugin have been written in a _single file_ (not a great decision for modularity) and have been [heavily documented](). 
 ## Code Organization and Quality
 - **Modular Layout**: Bigfoot.js is organized in a modular structure, facilitating ease of interpretation and maintenance.
 - **Consistent Naming Conventions**: The well-maintained naming conventions within the codebase help users understand the contents and purpose of each file.
