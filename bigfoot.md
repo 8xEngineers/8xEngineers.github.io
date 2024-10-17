@@ -11,7 +11,7 @@ permalink: /bigfoot
 [**Bigfoot.js**](https://bigfootjs.com) is a lightweight JavaScript library designed to enhance the handling of footnotes in web applications. By enabling users to view footnotes through interactive, clickable buttons, Bigfoot.js significantly improves both readability and aesthetic appeal.
 
 ## Design Decisions
-Developed over 9 years ago, Bigfoot relies on **[Coffeescript]coffeesc…)** and **[SCSS](https://sass-lang.com)** for its core functionality. These files generate the necessary CSS and JavaScript code for the library. It must be noted that these pipelines have now been replaced with more convenient and modern tools. For example, [Littlefoot](http://littlefoot.js.org/) uses Typescript to build the required files and can be built using [`npm`](https://www.npmjs.com).
+Developed over 9 years ago, Bigfoot relies on **[Coffeescript](coffeesc…)** and **[SCSS](https://sass-lang.com)** for its core functionality. These files generate the necessary CSS and JavaScript code for the library. It must be noted that these pipelines have now been replaced with more convenient and modern tools. For example, [Littlefoot](http://littlefoot.js.org/) uses Typescript to build the required files and can be built using [`npm`](https://www.npmjs.com).
 
 Furthermore, we note the following points -
 - **Dependency on jQuery**: Bigfoot.js leverages jQuery for efficient DOM manipulation, event handling, and traversal.
@@ -32,12 +32,12 @@ The root folder of Bigfoot.js contains the following files:
 - **`README.md`**: Provides essential information about the Bigfoot.js library, including installation instructions and relevant details for users.
 - **`bower.json`**: Manages library dependencies using Bower, specifying the required jQuery version and containing project metadata.
 - **`readme-dev.md`**: Offers guidance for developers on how to contribute to or modify the Bigfoot.js library.
-- **`disc` folder**: Contains the following files:
+- **`dist` folder**: This folder is generated as a result of the build process. It contains the following files:
   - **`bigfoot.js`**: The source code for the library.
   - **`bigfoot.min.js`**: A minified version of `bigfoot.js`, optimized by removing whitespace and comments to reduce file size.
   - **`bigfoot-default.css`**: Contains the default styles for footnote display on webpages.
   - **`bigfoot-default.scss`**: The SCSS version of the default CSS file, allowing users to utilize SASS features like variables and nesting for better style customization.
-- **`src` folder**: Houses the source files for CoffeeScript and SCSS, which are compiled into JavaScript and CSS files using Grunt.
+  - **`src` folder**: Houses the source files for CoffeeScript and SCSS, which are compiled into JavaScript and CSS files using Grunt. More specifically, we have the Coffeescript file (`bigfoot.coffee`) and the SCSS files for different styling options.
 
 
 ## Language Usage
