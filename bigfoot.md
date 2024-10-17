@@ -13,6 +13,8 @@ permalink: /bigfoot
 ## Design Decisions
 Developed over 9 years ago, Bigfoot relies on **[Coffeescript](coffeesc…)** and **[SCSS](https://sass-lang.com)** for its core functionality. These files generate the necessary CSS and JavaScript code for the library. It must be noted that these pipelines have now been replaced with more convenient and modern tools. For example, [Littlefoot](http://littlefoot.js.org/) uses Typescript to build the required files and can be built using [`npm`](https://www.npmjs.com).
 
+We tried to reason the decision of choosing Coffeescript instead of native Javascript for the plugin. Coffeescript is a more readable and concise language with less punctuation, function binding and syntactic sugar, which are all beneficial for developers. These could be some of the reasons why the authors chose Coffeescript for building the plugin. However, Coffeescript has its own issues - it has a steep learning curve for new users and it is not as popular as the other alternatives ([Typescript](https://www.typescriptlang.org), [Babel](https://babeljs.io), etc) in the present.
+
 Furthermore, we note the following points -
 - **Dependency on jQuery**: Bigfoot.js leverages jQuery for efficient DOM manipulation, event handling, and traversal.
 - **Customizability**: The library allows for extensive customization through CSS/SCSS overrides, enabling users to tailor the appearance of footnotes to fit their specific design needs.
@@ -29,7 +31,7 @@ We have noted the following qualities in the code -
 
 
 The root folder of Bigfoot.js contains the following files:
-- **`README.md`**: Provides essential information about the Bigfoot.js library, including installation instructions and relevant details for users.
+- **`README.md`**: Provides essential information about the `Bigfoot.js` library, including installation instructions and relevant details for users.
 - **`bower.json`**: Manages library dependencies using Bower, specifying the required jQuery version and containing project metadata.
 - **`readme-dev.md`**: Offers guidance for developers on how to contribute to or modify the Bigfoot.js library.
 - **`dist` folder**: This folder is generated as a result of the build process. It contains the following files:
@@ -39,27 +41,20 @@ The root folder of Bigfoot.js contains the following files:
   - **`bigfoot-default.scss`**: The SCSS version of the default CSS file, allowing users to utilize SASS features like variables and nesting for better style customization.
   - **`src` folder**: Houses the source files for CoffeeScript and SCSS, which are compiled into JavaScript and CSS files using Grunt. More specifically, we have the Coffeescript file (`bigfoot.coffee`) and the SCSS files for different styling options.
 
-
-## Language Usage
-- **JavaScript**: Utilized for enabling footnotes to appear upon user interaction (button clicks).
-- **HTML**: Used for positioning footnotes alongside their references on the webpage, enhancing interactive functionality.
-- **CSS**: Controls visual attributes such as fonts, spacing, colors, and styles for the footnotes.
-- **SCSS**: Organizes and creates reusable styles for footnotes, which are compiled into CSS to meet browser requirements.
-- **jQuery**: This JavaScript library facilitates HTML element manipulation, event management, and animations, playing a crucial role in footnote display and content updates.
-
-## Tool Quality
-Bigfoot.js employs Grunt for automating repetitive tasks, including:
-- **Compiling CoffeeScript**: Converts `bigfoot.coffee` into JavaScript (`bigfoot.js`).
-- **Compiling SCSS**: Transforms SCSS files into CSS, mapping source files to their compiled counterparts.
-- **Concatenation**: Combines multiple SCSS files, including base styles and variants.
-- **Autoprefixing**: Automatically adds vendor prefixes to the compiled CSS for broader compatibility.
-- **Minification**: Uses Uglify to compress the compiled JavaScript (`bigfoot.js`) into a smaller file (`bigfoot.min.js`), enhancing performance.
+As part of the build process, Grunt automates repetitive tasks, including:
+- **Compiling CoffeeScript**: Converting `bigfoot.coffee` into JavaScript (`bigfoot.js`).
+- **Compiling SCSS**: Transforming SCSS files into CSS, mapping source files to their compiled counterparts.
+- **Concatenation**: Combining multiple SCSS files, including base styles and variants.
+- **Autoprefixing**: Automatically adding vendor prefixes to the compiled CSS for broader compatibility.
+- **Minification**: Using Uglify to compress the compiled JavaScript (`bigfoot.js`) into a smaller file (`bigfoot.min.js`), enhancing performance.
 
 ### Modernization Considerations
 - **Dependency Management**: Currently utilizing Bower for dependency management, specifically for jQuery. However, Bower has been deprecated and is no longer maintained. Transitioning to more modern tools like NPM or Yarn for dependency management is advisable.
 - **`bower.json`**: Specifies a dependency on jQuery version 1.8.0 or higher and organizes project metadata, defining the entry point as `bigfoot.coffee`. It also includes an 'ignore' section to prevent unnecessary files from being installed.
 
 ### Code Modifications 
+We experimented with the plugin to explore the customization options and limitations in the plugin. The following code depicts a basic use case of the plugin along with the modifications we included.
+
 ```html
     <!DOCTYPE html>
 <html lang="en">
@@ -92,19 +87,31 @@ Bigfoot.js employs Grunt for automating repetitive tasks, including:
         // Initialize Bigfoot.js with a custom hoverDelay
         $(document).ready(function() {
             $.bigfoot({
+                //
+                //    Customization options in Bigfoot
+                //
                 popoverCreateDelay: 5000,
                 hoverDelay:500
 
             });
 
+            // Modifying the appearance of footnote link through Javascript
+            // We have replaced the default ellipses appearance with the text "Learn more" here
             setTimeout(function() {
-                $('.bigfoot-footnote__button').text('FT');
+                $('.bigfoot-footnote__button').text('Learn more');
              }, 100);
         });
     </script>
 </body>
 </html>
 ```
+
+Experimenting with this simple example, we have the following observations
+- Bigfoot indeed provides an easy interface for users to add customizable pop-over footnotes to their website with ease
+- There are plenty of customization options including scope of footnote, appaerance, user-interaction behaviour, etc.
+- Eventhough the code is well-documented, it is difficult to add modifications since it is not modular.
+- Although the plugin does not have any bugs, some parts of the source code seem like "band-aid" solutions to the problems. For example, consider this particular part of the code - 
+    `
 
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
