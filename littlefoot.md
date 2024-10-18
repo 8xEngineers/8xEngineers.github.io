@@ -7,7 +7,7 @@ permalink: /littlefoot
 
 # Littlefoot Overview
 
-![Demo GIF](./demo.gif)
+![Demo GIF](./assets/imgs/demo.gif)
 
 ## Introduction
 

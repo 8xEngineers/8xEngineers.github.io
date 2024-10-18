@@ -123,7 +123,7 @@ Experimenting with this simple example, we have the following observations
       anchorParentTagname : 'sup'
     ```
     This part essentially is trying to replace the `<sup>` tags around the footnotes so that its effects are removed. If there are other tags like `<sub>`, then their effects would still be rendered with the footnotes. See below - 
-    ![image-subissue](/assets/imgs/sub-issue.png)
+    ![image-subissue](./assets/imgs/sub-issue.png)
     Apart from these, there are other issues such as unused variables, 
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
