@@ -130,6 +130,31 @@ Experimenting with this simple example, we have the following observations
 
     This footnote embedded with &lt;sup&gt; is displayed normally - <sup id="fnref:1"><a href="#fn:1" id="fnref:1" rel="footnote">1</a></sup> but the one with &lt;sub&gt; is in the subscript - <sub id="fnref:2"><a href="#fn:2" id="fnref:2" rel="footnote">2</a></sub> </p>
 
-    Apart from these, there are other issues such as unused variables, 
+    Apart from these, there are other issues such as unused variables..
+
+    Moreover, we also identified some coding practices that could have potential improvement. For example, we notices that in the `bigfoot-popover.scss` there are several instance of hardcoded value and magic numbers such as:
+    ```
+    margin: ((1.4142135624 * $popover-tooltip-size / 2) + $button-height + $popover-margin-top) 0;
+    ```
+    Where the number `1.4142135624` is derived from squre root of 2 to calculate the diagonal length. While the value is correct used, it is better to assign this value to a named variable for readability and maintenance, for example:
+    ```
+    $diagonal-ratio: 1.4142135624;
+    margin: (($diagonal-ratio * $popover-tooltip-size / 2) + $button-height + $popover-margin-top) 0;
+    ```
+    
+    Additionally, for the below code snippet in `bigfoot.coffee`：
+  
+    ```
+    if typeof (size) == "string"
+        # Repalce special strings with corresponding widths
+        s = if size.toLowerCase() == "iphone"
+          "<320px"
+        else if size.toLowerCase() == "ipad"
+          "<768px"
+        else
+          size
+    ```
+    The specific pixel values of `320px` and `768px` are based on the older model of `iphone` and `ipad` screen size. This might be problemetic with todays models, especially the new released models with much higher resolutions and different aspect ratios. Such breakpoint should be using relatives units like `em`,`rem`, or `%` that can scale naturally according to the screen size and resolution.
+  
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
