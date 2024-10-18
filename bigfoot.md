@@ -154,7 +154,7 @@ Experimenting with this simple example, we have the following observations
         else
           size
     ```
-    The specific pixel values of `320px` and `768px` are based on the older model of `Iphone` and `Ipad` screen size. This might be problemetic with todays models, especially the new released models with much higher resolutions and different aspect ratios. Such breakpoint should be using relatives units like `em`,`rem`, or `%` that can sacle naturally according to the screen size and resolution.
+    The specific pixel values of `320px` and `768px` are based on the older model of `iphone` and `ipad` screen size. This might be problemetic with todays models, especially the new released models with much higher resolutions and different aspect ratios. Such breakpoint should be using relatives units like `em`,`rem`, or `%` that can scale naturally according to the screen size and resolution.
   
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
