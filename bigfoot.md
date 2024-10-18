@@ -132,7 +132,7 @@ Experimenting with this simple example, we have the following observations
 
     Apart from these, there are other issues such as unused variables..
 
-    Moreover, there are some potential problem on coding practice. For example, we notices that in the `bigfoot-popover.scss` there are several instance of hardcoded value and magic numbers such as:
+    Moreover, we also identified some coding practices that could have potential improvement. For example, we notices that in the `bigfoot-popover.scss` there are several instance of hardcoded value and magic numbers such as:
     ```
     margin: ((1.4142135624 * $popover-tooltip-size / 2) + $button-height + $popover-margin-top) 0;
     ```
