@@ -7,18 +7,39 @@ permalink: /littlefoot
 
 # Littlefoot Overview
 
+![Demo GIF](./demo.gif)
+
 ## Introduction
+
 **Littlefoot** is a lightweight JavaScript library designed to simplify the process of creating clickable buttons that automatically configure popovers to be fully visible across different browsers and devices.
 
 ## Design Decisions
 - **Decision over Option Principle**: Littlefoot adheres to this principle by providing users with fewer options and requiring fewer steps to reach their destination, enhancing the overall user experience.
-- **TypeScript**: The library is written in TypeScript, which enables a cleaner architecture and reduces the bundle size.
+- **TypeScript**: The library is written in TypeScript, which enables a cleaner architecture and reduces the bundle size. In addition, TypeScript can ensure type safety and reduce potential runtime errors. This also improves the developer experience through autocompletion and type inference.
 - **Responsive Design**: The footnote popover is automatically fixed to the bottom for smaller screens, such as mobile devices, ensuring optimal visibility.
 - **Customization**: Users can customize the appearance of Littlefoot by overriding CSS custom properties.
 - **No jQuery Dependency**: Unlike Bigfoot, Littlefoot does not require jQuery, making it a more lightweight solution.
+- **Modular Design**: Using modular import and export will facilitate code splitting and optimization. This allows unused code (tree structure) to be omitted from the final build, thus helping to reduce the size of the bundle.
+- **UMD and CJS Support**: The Rollup configuration outputs both UMD (for browsers) and CJS (for Node.js) formats. This allows littlefoot to be used in a variety of environments.
 
 ## Pattern
 Littlefoot's design pattern is centered around providing a simple and efficient way to create clickable buttons with automatic popover configuration.
+
+- **Build Process:**
+   - The project uses Rollup as a module bundler, which is ideal for libraries because of its tree-shaking abilities. Plugins such as `@rollup/plugin-commonjs`, `@rollup/plugin-node-resolve`, and `@rollup/plugin-terser` further optimize the build process.
+   - The build scripts include processes for bundling JavaScript, compiling TypeScript, and handling stylesheets.
+
+- **Testing:**
+   - Vitest is used for testing the code, with a jsdom environment configured. This is appropriate for testing DOM-related functionality.
+   - The use of tests ensures code correctness, and the testing configuration reflects attention to robust development practices.
+
+- **Tooling:**
+   - `Biome` is used for code linting and formatting, ensuring that the codebase remains consistent.
+   - Concurrently is used to run multiple commands in parallel, improving the efficiency of the development workflow.
+
+- **Patterns:**
+   - The code follows standard patterns such as modular imports, commonjs compatibility, and clean separation of concerns between different build processes and testing environments.
+   - Code is organized in a clear and maintainable way, with separation between configuration, source code, and testing.
 
 ## Language Usage
 - **TypeScript**: (~80%) Used for the majority of the library's code, providing a clean and maintainable architecture.
