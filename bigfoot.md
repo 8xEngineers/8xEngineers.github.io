@@ -110,6 +110,10 @@ Experimenting with this simple example, we have the following observations
 - Bigfoot indeed provides an easy interface for users to add customizable pop-over footnotes to their website with ease
 - There are plenty of customization options including scope of footnote, appaerance, user-interaction behaviour, etc.
 - Eventhough the code is well-documented, it is difficult to add modifications since it is not modular.
+- The code has some good engineering practices -
+    - It uses a consistent naming convention
+    - It uses variable names instead of hard-coded values in SCSS 
+    - 
 - Although the plugin does not have any bugs, some parts of the source code seem like "band-aid" solutions to the problems. For example, we noticed this part of the code - 
     ```
       #*
@@ -123,8 +127,9 @@ Experimenting with this simple example, we have the following observations
       anchorParentTagname : 'sup'
     ```
     This part essentially is trying to replace the `<sup>` tags around the footnotes so that its effects are removed. If there are other tags like `<sub>`, then their effects would still be rendered with the footnotes. See below - 
-    ![image-subissue](./assets/imgs/sub-issue.png)
+
+    This footnote embedded with &lt;sup&gt; is displayed normally - <sup id="fnref:1"><a href="#fn:1" id="fnref:1" rel="footnote">1</a></sup> but the one with &lt;sub&gt; is in the subscript - <sub id="fnref:2"><a href="#fn:2" id="fnref:2" rel="footnote">2</a></sub> </p>
+
     Apart from these, there are other issues such as unused variables, 
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
-
