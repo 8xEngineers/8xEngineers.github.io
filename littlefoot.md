@@ -40,6 +40,7 @@ Littlefoot's design pattern is centered around providing a simple and efficient 
 - **Patterns:**
    - The code follows standard patterns such as modular imports, commonjs compatibility, and clean separation of concerns between different build processes and testing environments.
    - Code is organized in a clear and maintainable way, with separation between configuration, source code, and testing.
+   - Code does not define any new classes. That simplfies code structure and makes debugging easy as well as lightens the transpiled JavaScript code.
 
 ## Language Usage
 - **TypeScript**: (~80%) Used for the majority of the library's code, providing a clean and maintainable architecture.
