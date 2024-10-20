@@ -52,7 +52,7 @@ As part of the build process, Grunt automates repetitive tasks, including:
 - **Dependency Management**: Currently utilizing Bower for dependency management, specifically for jQuery. However, Bower has been deprecated and is no longer maintained. Transitioning to more modern tools like NPM or Yarn for dependency management is advisable.
 - **`bower.json`**: Specifies a dependency on jQuery version 1.8.0 or higher and organizes project metadata, defining the entry point as `bigfoot.coffee`. It also includes an 'ignore' section to prevent unnecessary files from being installed.
 
-### Code Modifications 
+## Code Modifications 
 We experimented with the plugin to explore the customization options and limitations in the plugin. The following code depicts a basic use case of the plugin along with the modifications we included.
 
 ```html
@@ -106,6 +106,17 @@ We experimented with the plugin to explore the customization options and limitat
 </html>
 ```
 
+### Making modification
+To build the modified version of the plugin, run the following commands to make your own build after modifying `bigfoot.coffee` file in the source folder
+```
+    npm install 
+    npm install -g grunt-cli
+    npm install grunt --save-dev
+    grunt
+```
+
+For example, we have changed the appearance of the ellipses button to  "Learn more" in the modified version (see below). 
+
 Experimenting with this simple example, we have the following observations
 - Bigfoot indeed provides an easy interface for users to add customizable pop-over footnotes to their website with ease
 - There are plenty of customization options including scope of footnote, appaerance, user-interaction behaviour, etc.
@@ -131,5 +142,8 @@ Experimenting with this simple example, we have the following observations
     This footnote embedded with &lt;sup&gt; is displayed normally - <sup id="fnref:1"><a href="#fn:1" id="fnref:1" rel="footnote">1</a></sup> but the one with &lt;sub&gt; is in the subscript - <sub id="fnref:2"><a href="#fn:2" id="fnref:2" rel="footnote">2</a></sub> </p>
 
     Apart from these, there are other issues such as unused variables, 
+
+
+
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
