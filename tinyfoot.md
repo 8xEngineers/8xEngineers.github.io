@@ -12,7 +12,6 @@ With Tinyfoot, we take this idea forward by adding many more customization featu
 
 Building from the success of Littlefoot, we have added these key features to enhance the user experience:
 - **Highlights** -  Add a highlight to the footnote text to make it stand out.
-- **Click-and-drag** - Move the pop-over to anywhere on the page.
 - **Copy-button** - A simple yet useful feature to  copy the footnote text.
 
 With many more features in the pipeline, we are excited to see how users will utilize Tinyfoot to create engaging content.
@@ -21,3 +20,15 @@ With many more features in the pipeline, we are excited to see how users will ut
 Read more about our take on the predecessor libraries here
 - [Bigfoot](./bigfoot)
 - [Littlefoot](./littlefoot)
+
+# Links for demos:
+- [BigFoot demo](https://8xengineers.github.io/bigfoot#our-modifications)
+- [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications)
+
+# Our Modifications
+
+- Refactored the code to map individual function calls for better modularity.
+- Simplified various parts of the code to improve readability and overall performance.
+- Removed redundant files, such as the element file, to streamline the codebase.
+- Introduced a new highlight feature for enhanced footnote visibility and to mark important notes.
+- Added a copy button feature, which allows users to easily copy the footnote content. 
