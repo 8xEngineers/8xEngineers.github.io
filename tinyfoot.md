@@ -22,5 +22,5 @@ Read more about our take on the predecessor libraries here
 - [Littlefoot](./littlefoot)
 
 # Links for demos:
-- [BigFoot demo](./bigfoot#our-modifications)
-- [Littlefoot](./littlefoot#code-modifications) 
+- [BigFoot demo](https://8xengineers.github.io/bigfoot#our-modifications)
+- [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications) 
