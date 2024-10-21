@@ -115,9 +115,9 @@ Experimenting with this simple example, we have the following observations
     The specific pixel values of `320px` and `768px` are based on the older model of `iphone` and `ipad` screen size. This might be problemetic with todays models, especially the new released models with much higher resolutions and different aspect ratios. Such breakpoint should be using relatives units like `em`,`rem`, or `%` that can scale naturally according to the screen size and resolution.
 ### Our modification
 The modification made to the working of bigfoot are,
-- Changes in Font Size
-- Chnages in color of text, button, background container.
-- Changes in the button type and appearance
+- Changes in Font size.
+- Changes in color of text, button and background container.
+- Changes in the button type and appearance.
 - Incorporating the drag and drop feature, where the user can drag and move the footnote and place it elsewhere for better readability. 
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
