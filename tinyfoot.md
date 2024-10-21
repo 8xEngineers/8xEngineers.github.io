@@ -48,7 +48,7 @@ Read more about our take on the predecessor libraries here
     - **User Experience**: The design style ensures that all users can easily understand the feature without confusion.
     - **Outcome**: This feature enhances user accessibility and experience.
       
--**Highlight Feature**:
+- **Highlight Feature**:
     - **Context**: Introduced a highlight feature for footnotes which allows users to mark some specific footnotes as important. This allows the user to check it at a later stage without opening each footnote. 
     - **Design**:  The footnote can be highlighted by double-clicking the required part. 
     - **User Experience**: This feature ensures that users can easily highlight the required footnote without any additional efforts. 
