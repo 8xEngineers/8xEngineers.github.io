@@ -16,7 +16,11 @@
 
  - **Weakness**:
    - Navigating and working with unfamiliar languages like CoffeeScript and jQuery posed some challenges to start with.
-   - Managing older file versions and ensuring compatibility and to setup working environment was initially difficult. 
+   - Managing older file versions and ensuring compatibility and to setup working environment was initially difficult.
+
+**2. Madhusudan**:
+
+**3. Sudhansh**:
 
 
 
