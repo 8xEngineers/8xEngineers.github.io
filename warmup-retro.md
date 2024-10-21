@@ -15,8 +15,8 @@
     - I was able to understand, debug, and grasp the functionality of the code effectively to resolve issues and ensuring smooth workflow.
 
  - **Weakness**:
-  - Navigating and working with unfamiliar languages like CoffeeScript and jQuery posed some challenges to start with.
-  - Managing older file versions and ensuring compatibility and to setup working environment was initially difficult. 
+   - Navigating and working with unfamiliar languages like CoffeeScript and jQuery posed some challenges to start with.
+   - Managing older file versions and ensuring compatibility and to setup working environment was initially difficult. 
 
 
 
