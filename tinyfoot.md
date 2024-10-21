@@ -25,7 +25,7 @@ Read more about our take on the predecessor libraries here
 - [BigFoot demo](https://8xengineers.github.io/bigfoot#our-modifications)
 - [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications)
 
-# Our Modification
+# Our Modifications
 
 - Refactored the code to map individual function calls for better modularity.
 - Simplified various parts of the code to improve readability and overall performance.
