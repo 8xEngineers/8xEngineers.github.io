@@ -84,7 +84,7 @@ An area where users can use:
    <h1 style="text-align: center; font-color: red;">Demo of customizations</h1>
    With our code, we have added a copy button to copy the footnote content so that users can copy and paste it. Try copying this <a href="#fn:1" id="fnref:1" rel="footnote">footnote</a>, and pasting it in the text box below. 
    <br>
-   <textarea id="copy-text"></textarea>
+   <textarea id="copy-text" style="width: 100%; height: 100px; border: 1px solid black;"></textarea>
    <br>
    You can also highlight important footnotes. Try highlighting this <a href="#fn:2" id="fnref:2" rel="footnote">footnote</a> by double clicking on it.
 </div>
