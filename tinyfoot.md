@@ -23,4 +23,12 @@ Read more about our take on the predecessor libraries here
 
 # Links for demos:
 - [BigFoot demo](https://8xengineers.github.io/bigfoot#our-modifications)
-- [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications) 
+- [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications)
+
+  ## Our Modification
+
+- Refactored the code to map individual function calls for better modularity.
+- Simplified various parts of the code to improve readability and overall performance.
+- Removed redundant files, such as the element file, to streamline the codebase.
+- Introduced a new highlight feature for enhanced footnote visibility and to mark important notes.
+- Added a copy button feature, which allows users to easily copy the footnote content. 
