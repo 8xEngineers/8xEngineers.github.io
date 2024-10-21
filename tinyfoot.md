@@ -20,3 +20,7 @@ With many more features in the pipeline, we are excited to see how users will ut
 Read more about our take on the predecessor libraries here
 - [Bigfoot](./bigfoot)
 - [Littlefoot](./littlefoot)
+
+# Links for demos:
+- [BigFoot demo] (./bigfoot#our-modifications)
+- [Littlefoot](./littlefoot#code-modifications) 
