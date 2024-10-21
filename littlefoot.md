@@ -7,7 +7,7 @@ permalink: /littlefoot
 
 # Littlefoot Overview
 
-![Demo GIF](./assets/imgs/demo.gif)
+<!-- ![Demo GIF](./assets/imgs/demo.gif) -->
 
 ## Introduction
 
@@ -78,6 +78,15 @@ An area where users can use:
    -  Store it on their notes for later use
    -  Search for meaning in Google
 
+## Code Modifications
+
+<div>
+   With our code, we have added a copy button to copy the footnote content so that users can copy and paste it. Try copying this <a href="#fn:1" id="fnref:1" rel="footnote">footnote</a>, and pasting it in the text box below. 
+
+   <textarea id="copy-text"></textarea>
+
+   You can also highlight important footnotes. Try highlighting this <a href="#fn:2" id="fnref:2" rel="footnote">footnote</a> by double clicking on it.
+</div>
 
 ## Issues with the code
 In our experiments, we have found some issues with Littlefoot
@@ -91,3 +100,15 @@ Littlefoot is a well-designed and lightweight JavaScript library that simplifies
 - A structured approach to presenting the information for better readability and comprehension.
 
 Feel free to ask if you need further modifications or additional details!
+
+<div>
+    <ul>
+        <li id="fn:1">
+            This is the footnote to be copied.
+        </li>
+        <li id="fn:2">
+            This is the footnote to be highlighted.
+        </li>
+       
+    </ul>
+</div>

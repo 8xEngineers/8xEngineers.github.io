@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     
     <link rel="stylesheet" href="{{ './assets/css/bigfoot-default.css' | relative_url }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ './assets/css/littlefoot-default.css' | relative_url }}" crossorigin="anonymous">
+
     <link rel="stylesheet" href="{{ './assets/css/App.css'  | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="{{ './assets/scripts/bigfoot.js' | relative_url }}" crossorigin="anonymous"></script>
+    <script src="{{ './assets/scripts/littlefoot.js' | relative_url }}" crossorigin="anonymous"></script>
     <script src="{{ './assets/scripts/App.js'  | relative_url }}"></script>
     
     {% include head-custom.html %}
@@ -46,6 +49,15 @@
             draggableContent: true
           }
       );
+
+       // Initialize Littlefoot
+       document.addEventListener("DOMContentLoaded", function () {
+            
+            littlefoot.littlefoot({
+                buttonTemplate: "<span>Hello!</span>",
+        });
+        });
+        
   </script>
   </body>
 </html>
