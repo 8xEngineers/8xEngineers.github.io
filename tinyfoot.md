@@ -23,7 +23,7 @@ Read more about our take on the predecessor libraries here
 
 # Links for demos:
 - [BigFoot demo](https://8xengineers.github.io/bigfoot#our-modifications)
-- [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications)
+- [Littlefoot demo](https://8xengineers.github.io/littlefoot#code-modifications)
 
 # Our Modifications
 
