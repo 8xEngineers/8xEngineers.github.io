@@ -68,7 +68,7 @@ To build the modified version of the plugin, run the following commands to make 
 <div class="app">
     <div class="card">
       This is an important paragraph of text that the popover should not block. Here is the footnote
-      <sup id="fnref:1"><a href="#fn:1" id="fnref:1" rel="footnote">1</a></sup>
+      <sup id="fnref:3"><a href="#fn:1" id="fnref:3" rel="footnote">3</a></sup>
       And there is an important quote that should not be blocked by the popover.
       <h1 class="heading">Heading</h1>
       
@@ -77,7 +77,7 @@ To build the modified version of the plugin, run the following commands to make 
     <!-- Footnote List -->
     <div>
         <ul>
-          <li id="fn:1">
+          <li id="fn:3">
             This is an extremely long footnote that blocks the content on the page. 
             A user should be able to drag this footnote to a new location on the page so that it does not block the content.
             So click on the footnote and drag it to the right.
