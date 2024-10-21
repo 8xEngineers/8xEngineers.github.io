@@ -93,7 +93,7 @@ Experimenting with this simple example, we have the following observations
     ```
     This part essentially is trying to replace the `<sup>` tags around the footnotes so that its effects are removed. If there are other tags like `<sub>`, then their effects would still be rendered with the footnotes. See below - 
 
-    This footnote embedded with &lt;sup&gt; is displayed normally - <sup id="fnref:1"><a href="#fn:1" id="fnref:1" rel="footnote">1</a></sup> but the one with &lt;sub&gt; is in the subscript - <sub id="fnref:2"><a href="#fn:2" id="fnref:2" rel="footnote">2</a></sub> </p>
+    This footnote embedded with &lt;sup&gt; is displayed normally - <sup id="fnref:1"><a href="#fn:1" id="fnref:1" rel="footnote">1</a></sup> but the one with &lt;sub&gt; is in the subscript - <sub id="fnref:2"><a href="#fn:2" id="fnref:2" rel="footnote">2</a></sub> 
 
     Apart from these, there are other issues such as unused variables..
 
