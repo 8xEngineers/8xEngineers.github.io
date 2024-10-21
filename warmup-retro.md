@@ -9,10 +9,10 @@
 ## Strengths and Weaknesses of Individual Contributors
 
  - **Akash S**:
-  - **Strength**: 
-   - A productive working environment was setup through a deep understanding and thorough exploration of the tools and technologies involved in the repository.
-   - I could manage to complete tasks on time,implementing new ideas to develop the work outcome.
-   - I was able to understand, debug, and grasp the functionality of the code effectively to resolve issues and ensuring smooth workflow.
+   - **Strength**: 
+    - A productive working environment was setup through a deep understanding and thorough exploration of the tools and technologies involved in the repository.
+    - I could manage to complete tasks on time,implementing new ideas to develop the work outcome.
+    - I was able to understand, debug, and grasp the functionality of the code effectively to resolve issues and ensuring smooth workflow.
 
  - **Weakness**:
   - Navigating and working with unfamiliar languages like CoffeeScript and jQuery posed some challenges to start with.
