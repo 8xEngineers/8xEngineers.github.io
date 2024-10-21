@@ -62,6 +62,7 @@ To build the modified version of the plugin, run the following commands to make 
     npm install grunt --save-dev
     grunt
 ```
+By executing these installation and compilation instructions, Grunt will automatically complete the compilation of the bigfoot.coffee file according to the configuration of Gruntfile.coffee.
 
 ### Our Modifications
 
