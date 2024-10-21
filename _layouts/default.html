@@ -11,11 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     
-    <link rel="stylesheet" href="assets/css/bigfoot-default.css">
+    <link rel="stylesheet" href="{{ '/assets/css/bigfoot-default.css' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/App.css' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
     {% include head-custom.html %}
 
-    <script src="assets/scripts/bigfoot.js"></script>
+    <script src="{{ '/assets/scripts/bigfoot.js' | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ '/assets/scripts/App.js' | append: site.github.build_revision | relative_url }}"></script>
+
   
   <script type="text/javascript">
     var bigfoot = $.bigfoot(

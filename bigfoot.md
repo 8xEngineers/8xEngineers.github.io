@@ -85,8 +85,7 @@ To build the modified version of the plugin, run the following commands to make 
         </ul>
     </div>
   </div>
-  <script src="App.js"></script>
-  <script src="../bigfoot/dist/bigfoot.js"></script>
+  
   
   <script type="text/javascript">
     var bigfoot = $.bigfoot(
