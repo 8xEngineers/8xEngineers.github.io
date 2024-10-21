@@ -22,5 +22,5 @@ Read more about our take on the predecessor libraries here
 - [Littlefoot](./littlefoot)
 
 # Links for demos:
-- [BigFoot demo] (./bigfoot#our-modifications)
+- [BigFoot demo](./bigfoot#our-modifications)
 - [Littlefoot](./littlefoot#code-modifications) 
