@@ -27,12 +27,34 @@ Read more about our take on the predecessor libraries here
 
 # Our Modifications
 
-- Refactored the code to map individual function calls for better modularity.
-- Simplified various parts of the code to improve readability and overall performance.
-- Removed redundant files, such as the element file, to streamline the codebase.
-- Introduced a new highlight feature for enhanced footnote visibility and to mark important notes.
-- Added a copy button feature, which allows users to easily copy the footnote content. 
+- **Modularity Improvement**:
+    - Refactored the code to map individual function calls for better modularity.
+    - It makes it easier for developers to understand how every function works.
+    - It facilitates better testing and debugging.
+      
+- **Readability and Performance**:
+    - Simplified various parts of the code to improve readability and overall performance.
+    - Increases the overall working by optimizing algorithms and reducing execution time.
+    - Allows new users to grasp the working of the code quickly and to develop on it.
+      
+- **Removal of Redundant Files**:
+    - Removed the 'element.ts' file which contained fewer lines of trivial code.
+    - It helps to streamline the codebase, making it efficient to navigate between files.
+    - Reduces confusion and improves the focus on key components.
+      
+- **Copy Feature**:
+    - **Context**: Introduced a copy button feature to allow users to easily copy the content in the footnotes.
+    - **Design**: We decided to incorporate a button labelled "Copy" at the bottom of the footnote to make it simple and clear for the users.
+    - **User Experience**: The design style ensures that all users can easily understand the feature without confusion.
+    - **Outcome**: This feature enhances user accessibility and experience.
+      
+-**Highlight Feature**:
+    - **Context**: Introduced a highlight feature for footnotes which allows users to mark some specific footnotes as important. This allows the user to check it at a later stage without opening each footnote. 
+    - **Design**:  The footnote can be highlighted by double-clicking the required part. 
+    - **User Experience**: This feature ensures that users can easily highlight the required footnote without any additional efforts. 
+    - **Outcome**: This new feature enhances user's experience and saves time for searching the important footnotes. 
 
+    
 # Demo of Tinyfoot
 <article>
         <p>
