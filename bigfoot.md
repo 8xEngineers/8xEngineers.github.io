@@ -63,38 +63,7 @@ To build the modified version of the plugin, run the following commands to make 
     grunt
 ```
 
-### Our Modifications
-
-<div class="app">
-    <div class="card">
-      This is an important paragraph of text that the popover should not block. Here is the footnote
-      <sup id="fnref:3"><a href="#fn:1" id="fnref:3" rel="footnote">3</a></sup>
-      And there is an important quote that should not be blocked by the popover.
-      <h1 class="heading">Heading</h1>
-      
-      <button class="button" onclick="app.fetchAdvice()">I need more advice!</button>
-    </div>
-    <!-- Footnote List -->
-    <div>
-        <ul>
-          <li id="fn:3">
-            This is an extremely long footnote that blocks the content on the page. 
-            A user should be able to drag this footnote to a new location on the page so that it does not block the content.
-            So click on the footnote and drag it to the right.
-          </li>
-        </ul>
-    </div>
-  </div>
-  
-  
-  <script type="text/javascript">
-    var bigfoot = $.bigfoot(
-        {
-          draggableContent: true
-        }
-    );
-</script>
-
+For example, we have changed the appearance of the ellipses button to  "Learn more" in the modified version (see below). 
 
 Experimenting with this simple example, we have the following observations
 - Bigfoot indeed provides an easy interface for users to add customizable pop-over footnotes to their website with ease
@@ -103,7 +72,6 @@ Experimenting with this simple example, we have the following observations
 - The code has some good engineering practices -
     - It uses a consistent naming convention
     - It uses variable names instead of hard-coded values in SCSS 
-    - 
 - Although the plugin does not have any bugs, some parts of the source code seem like "band-aid" solutions to the problems. For example, we noticed this part of the code - 
     ```
       #*
@@ -145,6 +113,11 @@ Experimenting with this simple example, we have the following observations
           size
     ```
     The specific pixel values of `320px` and `768px` are based on the older model of `iphone` and `ipad` screen size. This might be problemetic with todays models, especially the new released models with much higher resolutions and different aspect ratios. Such breakpoint should be using relatives units like `em`,`rem`, or `%` that can scale naturally according to the screen size and resolution.
-  
+### Our modification
+The modification made to the working of bigfoot are,
+- Changes in Font Size
+- Chnages in color of text, button, background container.
+- Changes in the button type and appearance
+- Incorporating the drag and drop feature, where the user can drag and move the footnote and place it elsewhere for better readability. 
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
