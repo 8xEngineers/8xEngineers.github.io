@@ -105,14 +105,6 @@ Experimenting with this simple example, we have the following observations
     - It uses variable names instead of hard-coded values in SCSS 
 - Although the plugin does not have any bugs, some parts of the source code seem like "band-aid" solutions to the problems. For example, we noticed this part of the code - 
     ```
-      #*
-      # The tagname of the (possible) parent of the footnote link. This is really only necessary when you want to also get rid of that element — for instance, when the link is inside a `sup` tag. This tag and the link itself will be joined together for attribute from which you can drawn in your markup for footnotes/ buttons.
-      #
-      # @access public
-      # @author Chris Sauve
-      # @since 2.1.1
-      # @returns {String}
-      # @default 'sup'
       anchorParentTagname : 'sup'
     ```
     This part essentially is trying to replace the `<sup>` tags around the footnotes so that its effects are removed. If there are other tags like `<sub>`, then their effects would still be rendered with the footnotes. See below - 
