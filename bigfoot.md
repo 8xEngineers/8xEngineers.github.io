@@ -67,6 +67,7 @@ By executing these installation and compilation instructions, Grunt will automat
 ### Our Modifications
 
 <div class="app">
+    <h1 style="text-align: center; font-color: red;">Demo of customizations</h1>
     <div class="card">
       This is an important paragraph of text that the popover should not block. Here is the footnote
       <sup id="fnref:3"><a href="#fn:3" id="fnref:3" rel="footnote">3</a></sup>
@@ -146,3 +147,11 @@ Bigfoot.js presents a well-structured and modular approach to footnote managemen
 
     </ul>
 </div>
+
+<script>
+    var bigfoot = $.bigfoot(
+          {
+            draggableContent: true
+          }
+      );
+</script>

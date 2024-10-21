@@ -113,3 +113,10 @@ Feel free to ask if you need further modifications or additional details!
        
     </ul>
 </div>
+
+<script type="text/javascript">
+       // Initialize Littlefoot
+       document.addEventListener("DOMContentLoaded", function () {
+            littlefoot.default();
+        });
+  </script>
