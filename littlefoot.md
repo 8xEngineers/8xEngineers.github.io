@@ -72,6 +72,13 @@ Littlefoot offers several features that enhance its tool quality:
 - **Easy Integration**: Can be easily integrated with popular frameworks like WordPress and Gatsby, showcasing its flexibility.
 - **Customization Options**: Provides multiple options, such as activation methods (click, hover), delay for activation, and dismissal.
 
+## Copy feature added
+Have added a copy button to copy the footnote content so that users can copy and paste it.
+An area where users can use:
+   -  Store it on their notes for later use
+   -  Search for meaning in Google
+
+
 ## Issues with the code
 In our experiments, we have found some issues with Littlefoot
 - **Tight coupling in code** - Bigfoot allows us to modify the footnote appearance to any custom text as we saw in the Bigfoot section. However, this change breaks the Littlefoot code. The behavior is erratic depending on the HTML
