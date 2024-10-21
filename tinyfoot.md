@@ -12,7 +12,6 @@ With Tinyfoot, we take this idea forward by adding many more customization featu
 
 Building from the success of Littlefoot, we have added these key features to enhance the user experience:
 - **Highlights** -  Add a highlight to the footnote text to make it stand out.
-- **Click-and-drag** - Move the pop-over to anywhere on the page.
 - **Copy-button** - A simple yet useful feature to  copy the footnote text.
 
 With many more features in the pipeline, we are excited to see how users will utilize Tinyfoot to create engaging content.
