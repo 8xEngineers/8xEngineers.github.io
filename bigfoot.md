@@ -86,14 +86,6 @@ To build the modified version of the plugin, run the following commands to make 
     </div>
   </div>
   
-  
-  <script type="text/javascript">
-    var bigfoot = $.bigfoot(
-        {
-          draggableContent: true
-        }
-    );
-</script>
 
 
 Experimenting with this simple example, we have the following observations
