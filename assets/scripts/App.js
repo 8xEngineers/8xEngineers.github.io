@@ -19,7 +19,7 @@ class AdviceApp {
   }
 
   updateUI() {
-    document.querySelector(".heading").textContent = this.advice;
+    document.querySelector(".heading1").textContent = this.advice;
   }
 }
 

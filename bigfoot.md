@@ -70,7 +70,7 @@ To build the modified version of the plugin, run the following commands to make 
       This is an important paragraph of text that the popover should not block. Here is the footnote
       <sup id="fnref:3"><a href="#fn:1" id="fnref:3" rel="footnote">3</a></sup>
       And there is an important quote that should not be blocked by the popover.
-      <h1 class="heading">Heading</h1>
+      <h1 class="heading1">Advice shows up here</h1>
       
       <button class="button" onclick="app.fetchAdvice()">I need more advice!</button>
     </div>
