@@ -23,13 +23,13 @@
 ## Strengths and Weaknesses of Team Operations
 
 - **Strength**: 
- - The team maintained effective collaboration and communication throughout the project.
- - Regular progress checks were conducted to ensure everyone stayed on track to complete the work.
- - The overall dynamic and working environment were positive.
+  - The team maintained effective collaboration and communication throughout the project.
+  - Regular progress checks were conducted to ensure everyone stayed on track to complete the work.
+  - The overall dynamic and working environment were positive.
 
 - **Weakness**:
- - The team initially struggled to manage with the unfamiliar framework and languages.
- - The scheduling of meeting initially was also difficult to manage with everyone's availability.  
+  - The team initially struggled to manage with the unfamiliar framework and languages.
+  - The scheduling of meeting initially was also difficult to manage with everyone's availability.  
 
 
 ## Moving Forward
