@@ -69,23 +69,13 @@ By executing these installation and compilation instructions, Grunt will automat
 <div class="app">
     <div class="card">
       This is an important paragraph of text that the popover should not block. Here is the footnote
-      <sup id="fnref:3"><a href="#fn:1" id="fnref:3" rel="footnote">3</a></sup>
+      <sup id="fnref:3"><a href="#fn:3" id="fnref:3" rel="footnote">3</a></sup>
       And there is an important quote that should not be blocked by the popover.
       <h1 class="heading1">Advice shows up here</h1>
       
       <button class="button" onclick="app.fetchAdvice()">I need more advice!</button>
     </div>
-    <!-- Footnote List -->
-    <div>
-        <ul>
-          <li id="fn:3">
-            This is an extremely long footnote that blocks the content on the page. 
-            A user should be able to drag this footnote to a new location on the page so that it does not block the content.
-            So click on the footnote and drag it to the right.
-          </li>
-        </ul>
-    </div>
-  </div>
+</div>
   
 
 
@@ -129,11 +119,30 @@ Experimenting with this simple example, we have the following observations
           size
     ```
     The specific pixel values of `320px` and `768px` are based on the older model of `iphone` and `ipad` screen size. This might be problemetic with todays models, especially the new released models with much higher resolutions and different aspect ratios. Such breakpoint should be using relatives units like `em`,`rem`, or `%` that can scale naturally according to the screen size and resolution.
+
 ### Our modification
 The modification made to the working of bigfoot are,
 - Changes in Font size.
 - Changes in color of text, button and background container.
 - Changes in the button type and appearance.
 - Incorporating the drag and drop feature, where the user can drag and move the footnote and place it elsewhere for better readability. 
+
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
+
+<div>
+    <ul>
+        <li id="fn:1">
+            This is a footnote.
+        </li>
+        <li id="fn:2">
+            This is another footnote.
+        </li>
+        <li id="fn:3">
+        This is an extremely long footnote that blocks the content on the page. 
+        A user should be able to drag this footnote to a new location on the page so that it does not block the content.
+        So click on the footnote and drag it to the right.
+        </li>
+
+    </ul>
+</div>
