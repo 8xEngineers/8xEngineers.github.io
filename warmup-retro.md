@@ -8,7 +8,7 @@
 
 ## Strengths and Weaknesses of Individual Contributors
 
- - **Akash S**:
+**Akash S**:
   - **Strength**: 
     - A productive working environment was setup through a deep understanding and thorough exploration of the tools and technologies involved in the repository.
     - I could manage to complete tasks on time,implementing new ideas to develop the work outcome.
