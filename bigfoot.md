@@ -125,7 +125,9 @@ The modification made to the working of bigfoot are,
 - Changes in Font size.
 - Changes in color of text, button and background container.
 - Changes in the button type and appearance.
-- Incorporating the drag and drop feature, where the user can drag and move the footnote and place it elsewhere for better readability. 
+- Incorporating the drag and drop feature, where the user can drag and move the footnote and place it elsewhere for better readability.
+One of such examples is shown in the gif below,
+![Output_1](https://github.com/user-attachments/assets/faee1f0e-3cfa-4e5a-b285-1cbe1aa7321d)
 
 ## Conclusion
 Bigfoot.js presents a well-structured and modular approach to footnote management in web applications. While it effectively serves its purpose, transitioning to modern tools for dependency management and build processes could enhance its performance and maintainability.
