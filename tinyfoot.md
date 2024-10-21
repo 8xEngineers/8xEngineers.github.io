@@ -21,9 +21,9 @@ Read more about our take on the predecessor libraries here
 - [Bigfoot](./bigfoot)
 - [Littlefoot](./littlefoot)
 
-# Links for demos:
+# Links for demos
 - [BigFoot demo](https://8xengineers.github.io/bigfoot#our-modifications)
-- [Littlefoot](https://8xengineers.github.io/littlefoot#code-modifications)
+- [Littlefoot demo](https://8xengineers.github.io/littlefoot#code-modifications)
 
 # Our Modifications
 
@@ -32,3 +32,41 @@ Read more about our take on the predecessor libraries here
 - Removed redundant files, such as the element file, to streamline the codebase.
 - Introduced a new highlight feature for enhanced footnote visibility and to mark important notes.
 - Added a copy button feature, which allows users to easily copy the footnote content. 
+
+# Demo of Tinyfoot
+<article>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. In cursus turpis massa tincidunt dui. Tortor at auctor urna nunc id cursus metus. Neque
+            ornare aenean euismod elementum nisi quis eleifend quam. Consectetur adipiscing elit duis tristique.
+            Sagittis vitae et leo duis ut diam. Morbi blandit cursus risus at ultrices. <sup id="fnref:1"><a
+                    href="#fn:1" class="footnote">[1]</a></sup> Vulputate enim nulla aliquet porttitor lacus. Aliquam
+            ultrices
+            sagittis orci a scelerisque. Placerat in egestas erat imperdiet sed euismod nisi porta. In hac habitasse
+            platea dictumst. Proin fermentum leo vel orci porta non pulvinar. <sup id="fnref:2"><a href="#fn:2"
+                    class="footnote">[2]</a></sup>
+        </p>
+        <aside class="footnotes">
+            <hr>
+            <ol>
+                <li id="fn:1">
+                    <p>This is footnote number 1.
+                        <a href="#fnref:1" class="reversefootnote">&#160;&#8617;</a>
+                    </p>
+                </li>
+                <li id="fn:2">
+                    <p>This is footnote number 2.
+                        <a href="#fnref:2" class="reversefootnote">&#160;&#8617;</a>
+                    </p>
+                </li>
+            </ol>
+        </aside>
+    </article>
+
+
+<script>
+    // Initialize tinyfoot
+    document.addEventListener("DOMContentLoaded", function () {
+        tinyfoot.default();
+    });
+</script>
