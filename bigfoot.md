@@ -128,6 +128,7 @@ The modification made to the working of bigfoot are,
 - Changes in the button type and appearance.
 - Incorporating the drag and drop feature, where the user can drag and move the footnote and place it elsewhere for better readability.
 One of such examples is shown in the gif below,
+
 ![Output_1](https://github.com/user-attachments/assets/faee1f0e-3cfa-4e5a-b285-1cbe1aa7321d)
 
 ## Conclusion
